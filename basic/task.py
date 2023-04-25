@@ -109,7 +109,7 @@ class ImgTask:
         self.img_ws = None
         self.wssRq = {
             "session_hash": "".join(random.sample(string.ascii_lowercase + string.digits, 11)),
-            "fn_index": 3
+            "fn_index": 1
         }
         self.times = 0
 
@@ -137,7 +137,7 @@ class ImgTask:
         elif msg["msg"] == "send_data":
             process = {
                 "data": [self.prompt[0], "" if len(self.prompt) == 1 else self.prompt[1], 9],
-                "fn_index": 3
+                "fn_index": 1
             }
             img_ws.send(json.dumps(process))
 
@@ -161,6 +161,8 @@ class ImgTask:
                     print("Image cached! Name: " + cache_dir + filename)
                 else:
                     os.remove(cache_dir + filename)
+                # only 1
+                break
 
     def on_error(self, img_ws, error):
         print(error)

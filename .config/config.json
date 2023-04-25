@@ -1,26 +1,26 @@
 {
   "autoReply": true,
 
-  "internetKey": "-o",
+  "internetKey": "-联网",
   "internetResult": 3,
 
-  "groupChatKey": "-c",
+  "groupChatKey": "-聊天",
   "grpReplyMode": true,
   "grpCitationMode": true,
-  "privateChatKey": "-c",
+  "privateChatKey": "-聊天",
   "prvReplyMode": true,
   "prvCitationMode": false,
-  "characterKey": "-p",
-  "conclusionKey": "-z",
+  "characterKey": "-角色扮演",
+  "conclusionKey": "-精简对话",
 
   "stableDiffRly": true,
-  "groupImgKey": "-i",
-  "privateImgKey": "-i",
-  "negativePromptKey": "-n",
+  "groupImgKey": "-画图",
+  "privateImgKey": "-画图",
+  "negativePromptKey": "-负反馈",
   "isCached": true,
 
-  "helpKey": "-h",
-  "resetChatKey": "-rs",
-  "regenerateKey": "-rg",
-  "rollbackKey": "-rb"
+  "helpKey": "-帮助",
+  "resetChatKey": "-重置对话",
+  "regenerateKey": "-重新生成",
+  "rollbackKey": "-回滚"
 }

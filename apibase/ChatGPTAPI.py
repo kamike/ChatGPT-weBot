@@ -192,7 +192,8 @@ class Chatbot:
 
             try:
                 response = self.session.post(
-                    url="https://api.openai.com/v1/chat/completions",
+                    #url="https://api.openai.com/v1/chat/completions",
+                    url="https://api.openai-asia.com/v1/chat/completions",
                     headers={"Authorization": f"Bearer {self.api_key}"},
                     json={
                         "model": self.engine,
