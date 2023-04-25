@@ -162,7 +162,8 @@ class ImgTask:
                 else:
                     os.remove(cache_dir + filename)
                 # only 1
-                break
+                if (self.is_room):
+                    break
 
     def on_error(self, img_ws, error):
         print(error)

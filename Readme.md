@@ -6,8 +6,12 @@
 
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/SnapdragonLee/ChatGPT-weBot)
 
+基于 https://github.com/SnapdragonLee/ChatGPT-weBot 修改
 
-修复群@无效，支持中文命令，中文画图，只返回一张
+修复群@无效，群昵称写死
+支持中文命令
+支持中文画图，调用百度翻译
+画图在群消息只返回一张图，私聊4张图
 
 使用基于 ChatGPT (API-KEY 调用) 、Stable Diffusion AI画图 与 官方微信hook接口 的 ChatGPT-weBot机器人。中文文档 | [English](./Readme-en.md)
 
