@@ -95,12 +95,9 @@ def handle_recv_txt_msg(j):
 
     if autoReply and ((not is_room and prvReplyMode) or (is_room and grpReplyMode)):
         if content.startswith(helpKey):
-            reply = str(
-                b'\xe6\xac\xa2\xe8\xbf\x8e\xe4\xbd\xbf\xe7\x94\xa8 ChatGPT-weBot \xef\xbc\x8c\xe6\x9c\xac\xe9'
-                b'\xa1\xb9\xe7\x9b\xae\xe5\x9c\xa8 github \xe5\x90\x8c\xe5\x90\x8d\xe5\xbc\x80\xe6\xba\x90\n',
-                'utf-8') + helpKey + " 查看可用命令帮助\n" + \
-                    ((groupImgKey + " 提问群AI画图机器人 ") if is_room else (
-                            privateImgKey + " 提问AI画图机器人 ")) + \
+            reply = '我是一个基于ChatGPT的聊天机器人，你可以@我聊天，也可以支持以下命令  \n' + helpKey + " 查看可用命令帮助\n" + \
+                    ((groupImgKey + " 输入关键词画图，关键词用空格分开 ") if is_room else (
+                            privateImgKey + " 输入关键词画图，关键词用空格分开 ")) + \
                     negativePromptKey + " 可选负面提示\n" + \
                     ((groupChatKey + " 提问群聊天机器人 ") if is_room else (privateChatKey + " 提问聊天机器人 ")) + \
                     internetKey + " 可联网\n" + \
